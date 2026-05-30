@@ -1,0 +1,6 @@
+{
+  "localUrl": "http://mywordpress.local",
+  "productionUrl": "https://www.mywebsite.com",
+  "outputPath": "./public",
+  "vercelAnalytics": false
+}

@@ -1,0 +1,22 @@
+{
+  "name": "wp-local-to-static",
+  "version": "1.0.0",
+  "description": "Zero-cost, secure, and blazing-fast static WordPress hosting on Vercel.",
+  "main": "scripts/crawler.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "npx -y serve public",
+    "crawl": "node scripts/crawler.js",
+    "publish": "node scripts/publish.js"
+  },
+  "keywords": [
+    "wordpress",
+    "static-site-generator",
+    "vercel",
+    "jamstack",
+    "zero-cost-hosting"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
