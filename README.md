@@ -98,6 +98,31 @@ This single command will:
 
 ---
 
+## ☁️ Deploying to Vercel (Automatic GitHub Pull)
+
+To configure Vercel to automatically detect pushes to your GitHub repository and deploy your static site, follow these instructions:
+
+### 1. Create a Vercel Project
+1. Log into your [Vercel Dashboard](https://vercel.com) (create a free account if you haven't).
+2. Click **Add New...** and select **Project**.
+3. Under **Import Git Repository**, find your cloned `wp-local-to-static` repository and click **Import**.
+
+### 2. Configure Build & Development Settings
+On the project import screen, configure the following settings:
+* **Framework Preset:** Select **Other** (since it's a standard static website).
+* **Root Directory:** Keep as `./` (or directory root).
+* **Build Command:** Toggle **OFF** / Leave empty (our static files are crawled locally and pushed directly).
+* **Output Directory:** Change this to **`public`** (or whatever folder you entered in your config output path). *This is extremely important as it tells Vercel where to find your compiled static pages.*
+
+### 3. Deploy
+1. Click **Deploy**. Vercel will pull and host your folder immediately!
+2. You will get a free production subdomain (e.g., `your-site.vercel.app`).
+3. You can go to the project **Settings → Domains** to connect your custom domain (e.g., `www.mywebsite.com`) for free.
+
+Whenever you run `npm run publish` locally, your files are pushed to GitHub, Vercel pulls the changes immediately, and your live site updates in under 60 seconds!
+
+---
+
 ## 🔧 Recommended WordPress Plugin Settings
 
 For the absolute best results, configure these minor options in your local WordPress environment:
