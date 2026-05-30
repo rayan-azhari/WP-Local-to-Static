@@ -18,11 +18,11 @@ try {
   process.exit(1);
 }
 
-const BASE_URL = config.localUrl; // e.g. http://rayanazhari.local
-const DOMAIN = BASE_URL.replace(/^https?:\/\//i, '').split(':')[0]; // e.g. rayanazhari.local
+const BASE_URL = config.localUrl; // e.g. http://mywordpress.local
+const DOMAIN = BASE_URL.replace(/^https?:\/\//i, '').split(':')[0]; // e.g. mywordpress.local
 
-const PROD_URL = config.productionUrl; // e.g. https://www.rayanazhari.co.uk
-const PROD_DOMAIN = PROD_URL.replace(/^https?:\/\//i, '').split(':')[0]; // e.g. www.rayanazhari.co.uk
+const PROD_URL = config.productionUrl; // e.g. https://www.mywebsite.com
+const PROD_DOMAIN = PROD_URL.replace(/^https?:\/\//i, '').split(':')[0]; // e.g. www.mywebsite.com
 
 const OUTPUT_DIR = path.isAbsolute(config.outputPath) 
   ? config.outputPath 

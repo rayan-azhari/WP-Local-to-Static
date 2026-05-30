@@ -27,8 +27,8 @@ async function main() {
 
   // Load template or existing config as baseline
   let config = {
-    localUrl: 'http://rayanazhari.local',
-    productionUrl: 'https://www.rayanazhari.co.uk',
+    localUrl: 'http://mywordpress.local',
+    productionUrl: 'https://www.mywebsite.com',
     outputPath: './public',
     vercelAnalytics: false
   };
